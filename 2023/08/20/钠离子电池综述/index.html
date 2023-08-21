@@ -1,0 +1,702 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.jpg">
+  <link rel="icon" href="/img/favicon.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="dgqyushen">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="前言本篇文章源于《Recent Progress of Promising Cathode Candidates for Sodium-Ion Batteries: Current Issues, Strategy, Challenge, and Prospects》并适当精简 摘要本篇文章主要介绍目前比较流行的SIB（sodium-ion batteries ）的最新进展，包括层状氧化物、聚阴离">
+<meta property="og:type" content="article">
+<meta property="og:title" content="钠离子电池综述">
+<meta property="og:url" content="https://www.talk-qys.top/2023/08/20/%E9%92%A0%E7%A6%BB%E5%AD%90%E7%94%B5%E6%B1%A0%E7%BB%BC%E8%BF%B0/index.html">
+<meta property="og:site_name" content="QianYuShen&#39;s Blog">
+<meta property="og:description" content="前言本篇文章源于《Recent Progress of Promising Cathode Candidates for Sodium-Ion Batteries: Current Issues, Strategy, Challenge, and Prospects》并适当精简 摘要本篇文章主要介绍目前比较流行的SIB（sodium-ion batteries ）的最新进展，包括层状氧化物、聚阴离">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.talk-qys.top/img/Sodium-Bettery.jpg">
+<meta property="article:published_time" content="2023-08-20T13:23:27.000Z">
+<meta property="article:modified_time" content="2023-08-21T09:40:04.705Z">
+<meta property="article:author" content="dgqyushen">
+<meta property="article:tag" content="钠电池">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img.talk-qys.top/img/Sodium-Bettery.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>钠离子电池综述 - QianYuShen&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"www.talk-qys.top","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>QianYuShen&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://img.talk-qys.top/img/9489fd7f49cf4998a706c5539a1d8ccc%20(1).jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="钠离子电池综述"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-08-20 21:23" pubdate>
+          2023年8月20日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          <!-- compatible with older versions-->
+          9.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          <!-- compatible with older versions-->
+          77 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">钠离子电池综述</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本篇文章源于《Recent Progress of Promising Cathode Candidates for Sodium-Ion Batteries: Current Issues, Strategy, Challenge, and Prospects》并适当精简</p>
+<h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>本篇文章主要介绍目前比较流行的SIB（sodium-ion batteries ）的最新进展，包括层状氧化物、聚阴离子材料和普鲁士蓝类似物。指出了目前这些阴极需要解决的问题，如能量密度不足、电子电导率低、空气敏感性等。本综述还详细介绍了这三种阴极候选材料的结构特征。</p>
+<p>此外，还总结了近年来提高电化学性能的优化策略，包括元素掺杂、形貌修饰、结构体系等。</p>
+<p>最后总结了这三种正极材料的研究现状并提出了未来的发展方向。本综述旨在为下一代SIB正极材料的开发提供实用指导。</p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>由于低成本和环保，钠离子电池（SIBs）是锂离子电池（LIBs）有希望的替代品。然而，它们的能量密度仍然不足，迫切需要改进。一个重要挑战是选择阴极材料。</p>
+<p>迄今为止，已经合成并在研究文章中发布了许多系列的阴极材料，重点是优化钠离子电池的电化学性能：<strong>层状氧化物、多负离子化合物、普鲁士蓝类似物（PBAs）</strong>和有机材料，其中前三种类型受到了最大关注。其中，层状氧化物<strong>以其独特的层状结构和相对较高的能量密度</strong>而闻名，这显著促进了它们在能量存储系统中的广泛应用。聚阴离子化合物<strong>因其坚固的晶体结构</strong>而受到赞赏，在循环过程中提供了显著的稳定性，实现了优越的循环寿命。此外，它们表现出高热稳定性，有益于安全考虑。另一方面，普鲁士蓝类似物具有三维的晶体结构，具有<strong>大的间隙空间</strong>。这种特性使得离子快速扩散成为可能，从而促进了高速率性能，使得普鲁士蓝类似物特别适用于需要快速充放电循环的应用。</p>
+<p>在此之后，总结了近年来作为阴极材料的这三种材料的优化策略，重点介绍了元素掺杂、表面涂层、结构设计以及合成方法，如图所示。最后，从电化学性能、成本和环境友好性等角度对这三种材料进行了比较。</p>
+<p><img src="https://img.talk-qys.top/img/sstr202300150-fig-0001-m.webp" srcset="/img/loading.gif" lazyload alt="sstr202300150-fig-0001-m"></p>
+<h1 id="聚阴离子化合物的结构特征与当前问题"><a href="#聚阴离子化合物的结构特征与当前问题" class="headerlink" title="聚阴离子化合物的结构特征与当前问题"></a>聚阴离子化合物的结构特征与当前问题</h1><p>钠离子电池的阴极材料涵盖了许多家族，具有多样的结构，允许钠离子的插入/提取。理想的钠离子电池阴极材料应具备多种特性，如高能量密度，高输出电压，长寿命，优异的倍率性能，高化学和结构稳定性，高安全性，低成本等。</p>
+<p>分层氧化物，多阴离子化合物以及普鲁士蓝类似物是最有前景的候选材料，在结构演变和当前挑战方面进行简要介绍。</p>
+<h3 id="聚阴离子化合物的分类和结构特征"><a href="#聚阴离子化合物的分类和结构特征" class="headerlink" title="聚阴离子化合物的分类和结构特征"></a>聚阴离子化合物的分类和结构特征</h3><p>具有Na <em>x</em> M <em>y</em> (XO 4 ) <em>n</em> 分子式的聚阴离子阴极材料，具有高氧化还原电位和高热稳定性，但电导率较低。由于M和X的多样性，许多种类的聚阴离子材料已应用于钠离子电池。在本节中，我们主要将磷酸盐、焦磷酸盐、氟磷酸盐、硫酸盐和硅酸盐作为聚阴离子阴极材料的示例进行介绍。</p>
+<p>源自LIBs中的LiFePO补偿材料，磷酸盐NaMPO（M=Fe，Mn）也表现出卓越的商业化潜力。其中，NaFePO展现出显著的商业潜力。具有正交晶体结构（空间群：Pnma）的NaFePO分为橄榄石和马瑞西特两个相（分别为相I和相II）。由于橄榄石结构中沿b轴存在Na离子扩散通道，由相邻的FeO单位和PO四面体连接而成（图3a，b），橄榄石状NaFePO作为SIBs正极材料具有极高的容量，因此备受期待。相反，马瑞西特相缺乏Na离子扩散通道，这是不期望的。因此，在高温下由橄榄石相向马瑞西特相的相变被认为是不理想的。为了解决这个问题，通常通过从LiFePO进行离子交换来合成橄榄石状NaFePO，而不是传统的化学反应。至于NaMnPO，它具有较高容量的优势。然而，锰溶解到电解质中的风险以及相应的Jahn-Teller效应限制了其发展，需要紧急优化。</p>
+<p><img src="https://img.talk-qys.top/img/sstr202300150-fig-0003-m.webp" srcset="/img/loading.gif" lazyload alt="sstr202300150-fig-0003-m"></p>
+<p>与NaMPO的<strong>单一扩散通道</strong>相比，NASICON型（Na超离子导体）磷酸盐材料具有<strong>多个三维Na传输通道，可以实现更快的Na扩散。</strong>NASICON型磷酸盐材料的基本化学式为NaM(XO)2(M为V、Fe、Ni、Mn、Ti、Cr、Zr等，X为P、S、Si、Se、Mo等)。在过渡金属方面，NASICON型磷酸盐材料可分为单一过渡金属型和二元过渡金属型。在单一过渡金属型中，Na3V2(PO4)3（NVP）特别受到研究，具有优异的热稳定性、长寿命和低体积膨胀的优势。NVP的结构具有R3空间群。它由VO6八面体通过氧原子连接到三个PO4四面体，形成一个”灯笼”单元。在这个三维框架内，有Na1位点（六重配位）和Na2位点（八重配位）。Na1位点表现出更高的电化学活性，与Na2位点相比，在较高电压下从层间提取Na离子。此外，开放的三维框架为Na离子扩散提供了多条迁移路径。然而，孤立的金属八面体导致电子导电性较低。至于二元过渡金属型NaVMxM(PO4)3，它们的主要优势是通过部分取代NVP中的钒来降低成本和环境污染。此外，一些其他过渡金属元素如钛和锰也可以帮助提高容量并减少副反应.</p>
+<p>焦磷酸盐是由磷酸盐在500-550°C的热分解过程中产生的。在这个过程中，一个氧原子丧失，导致了P2O单位的形成。因此，与磷酸盐相比，焦磷酸盐表现出更好的结构稳定性，尽管可能会牺牲一些特定的容量。焦磷酸盐总共有3种类型：Na4P2O7，钠双金属焦磷酸盐Na2MP2O7以及混合金属钠焦磷酸盐NaMP(PO3)4P2O7，分别对应。Na2MP2O7特别引人关注，类似于NVP，它由角连接的FeO八面体和PO四面体组成，并且还通过P多面体构建了3D Na离子扩散通道，方向分别为[100]、[110]和[011]。Na2MP2O7具有相对较高的工作电压，但容量较低，约为90毫安时/克。容量较低是由于不同情况下（Na1-Na8）的多次Na离子提取步骤和有序性引起的。</p>
+<p>氟磷酸盐材料是通过将氟离子引入磷酸盐化合物中形成的。氟磷酸盐可分为三种，分别是NaVPO 4 F，Na 2 MPO 4 F和Na 3 (VO 1−<em>x</em> PO 4 ) 2 F 1+2<em>x</em> （0≤x≤1）。其中，钠钒氟磷酸盐家族引起了最多的关注。例如，NASICON型钠钒氟磷酸盐Na 3 V 2 (PO 4 ) 2 F 3 可以达到高达3.66-4.1 V的工作电压。Na 2 FePO 4 F和Na 2 CoPO 4 F也是有前途的钠离子电池候选正极材料，正在等待研究。</p>
+<p>硫酸盐（Na 2 M（SO 4 ） 2 ·nH 2 O）因其更离子化的M-O键和SO 4 2− 的更强电负性而引起了全球关注。在各种不同的硫酸盐中，Na 2 Fe 2 （SO 4 ） 3 是最有前途的。在Na 2 Fe 2 （SO 4 ） 3 的结构中，存在一个由二聚体Fe 2 O 10 多面体和SO 4 单元组成的三维Na + 扩散通道。硅酸盐（Na 2 MSiO 4 ）也值得一提，因为它们由于强大的SiO键而以高结构稳定性而闻名。代表性的例子是Na 2 FeSiO 4 ，在充放电过程中可实现两电子转移，理论容量为276 mAh g −1 。</p>
+<h3 id="聚阴离子化合物的当前问题"><a href="#聚阴离子化合物的当前问题" class="headerlink" title="聚阴离子化合物的当前问题"></a>聚阴离子化合物的当前问题</h3><p>聚阴离子型材料的阴极具有相对较高的氧化还原电位，这归因于高电负性聚阴离子基团的存在所引发的感应效应。然而，<strong>聚阴离子基团的颗粒尺寸较大、摩尔质量较高，以及本征电子导电性较差</strong>，最终降低了净电化学比容量，并进一步阻碍了其发展。</p>
+<p>多阴离子化合物因缺乏直接电子共轭而具有固有的低电子导电性问题。尽管NASICON型磷酸盐具有多个快速的三维钠通道，但电子导电性仍然不理想。例如，在NASICON型NaV(PO )中，VO 八面体之间没有共用的氧原子，而在PO 四面体中是共用的，导致电子传输遵循V–O–P–O–V路径，而不是快速的V–O–V路径。因此，尽管具有高输出电压和稳定的结构，多阴离子化合物正面临着实现商业化的挑战，低导电性是急需解决的问题之一。</p>
+<p>低电子导电性将进一步影响速率能力，从而降低比容量。众所周知，高比容量通常是通过多种离子的插入和提取实现的。然而，在多阴离子材料中，并非所有Na离子都能从框架中逸出，根据文献，仅约50%的Na离子可以逸出。此外，大分子量也抑制了比容量的提高，这表明多阴离子材料距离理论阴极材料还有一定距离。</p>
+<h1 id="聚阴离子材料的优化策略"><a href="#聚阴离子材料的优化策略" class="headerlink" title="聚阴离子材料的优化策略"></a>聚阴离子材料的优化策略</h1><h3 id="元素掺杂"><a href="#元素掺杂" class="headerlink" title="元素掺杂"></a>元素掺杂</h3><h4 id="正离子掺杂"><a href="#正离子掺杂" class="headerlink" title="正离子掺杂"></a>正离子掺杂</h4><p>对于Na 3 V 2 (PO 4 ) 3 ，刘等人设计了一种Fe掺杂的Na 3 V 2 (PO 4 ) 3 @C (NVFP) 阴极。在这种材料中，通过部分取代V离子引入了Fe离子，因为它在Fe掺杂到V位点的形成能最小（图8b）。如图8c所示，Fe掺杂有效降低了带隙能量，从而促进了Na + 扩散动力学。此外，由于Fe和V之间的3d轨道具有不同的自旋构型，Fe掺杂还增强了VO和PO键的强度。此外，Fe掺杂可以催化包覆碳的石墨化，引入更多表面孔隙，从而扩大阴极与电解质之间的接触面积（图8a）。最终，NASICON型NVFP显示出优异的倍率性能，当放电倍率从0.1 C增加到20 C时，仅经历了21.26 mA h g −1 的容量衰减（表3）。Cr掺杂也被证明是改善电子导电性的有益方法。余等人通过使用V/Cr固溶体合成了Cr掺杂的Na 3 V 2 (PO 4 ) 3 (NVCP) 阴极，进一步嵌入了双碳网络（V 4 C 3 T <em>x</em> 和 V 3 CrC 3 T <em>x</em> Mxene）。NVCP@dual-carbon的结构示例如图8d所示。如图8e所示，Cr取代减轻了Na + /空位的排序，并形成了CrO 6 八面体，为Na + 在充放电过程中的迁移提供了更平滑的扩散路径。Cr取代促进了Na + 传递动力学，提高了2-3个数量级，比NVP高得多。因此，与NVP相比，NVCP在更宽的电压范围内显示出更高的比容量和更好的循环稳定性，其在200 C时的容量为78 mA g −1 （表3）。双金属取代同样适用于NVP，因为它在减少昂贵的钒消耗和改善电化学性能方面是有效的。陈等人 通过掺杂Co 2+ 和Cu 2+ 离子来优化Na 3 V 2 (PO 4 ) 3 ，从而调节Na+位点的占据和修改晶格参数，从而增强结构稳定性和长周期寿命。赵等人选择Fe和Ni元素部分取代Na 3 Fe 0.8 VNi 0.2 (PO 4 ) 3 (NFVNP)，值得一提的是，双金属掺杂有助于使V保持三价状态，并进一步使NFVNP在空气中具有高稳定性。此外，Ni取代对增加容量和降低R ct 有影响。因此，NFVNP在20 C时展现出惊人的功率密度为6500 W kg −1 ，在1400个循环后容量保持率为84.6%，79.3 mAh g −1<img src="https://img.talk-qys.top/img/sstr202300150-fig-0008-m.webp" srcset="/img/loading.gif" lazyload alt="sstr202300150-fig-0008-m"></p>
+<p>关于钒基氟磷酸盐Na 3 V 2 (PO 4 ) 2 F 3 (NVPF)，郭等人合成了一种以Zr掺杂的NVPF，其表面涂覆有N掺杂碳层。部分用Zr取代V对Na + 传输动力学产生积极影响，因为它具有更大的面间距。此外，N掺杂碳涂层有助于降低内部电阻。因此，NVPF-Zr-0.02/NC复合材料在0.5倍C下最终达到可逆容量为119.2毫安时/克 −1 ，库仑效率为78%，远高于NVPF。顾等人 在NVPF上首次采用高熵策略，通过微量Ca、Mg、Al、Cr、Mn元素掺杂形成Na 3 V 1.9 (Ca、Mg、Al、Cr、Mn) 0.1 (PO 4 ) 2 F 3 复合材料（HE-NVPF）。这种方法构建了稳健的三维开放通道框架，并通过掺杂离子的不同离子半径有效增加了晶胞参数。高熵元素的掺杂不仅通过降低Na + 迁移能量（图8h）显著提高了电子导电性，还增加了Na2位点的比例，以提高工作电压，从而抑制高电压下的复杂相变。如图8f、g所示，原始NVPF（p-NVPF）在充放电过程中发生相变，而HE-NVPF不发生相变。因此，HE-NVPF在20倍C下表现出了出色的电化学性能，能量密度为445瓦时/千克 −1 ，经过2000次循环后容量保持率为80.4%，超过了p-NVPF（图8i）。</p>
+<p>除了对NVP和NVPF的研究外，最近还报道了对其他多阴离子材料的掺杂修改。例如，熊等人提出了一种镁掺杂的钠铁磷氧复合材料（NFPP/C）。镁掺杂增强了钠离子的扩散动力学并降低了内部电阻，最终在20 A/g的高倍率性能和5 A/g的超长循环寿命（表3）上展现出40毫安时/克和14,000个循环。刘等人合成了一种铝掺杂的钠钴磷氧（NCPP）正极，其中铝部分取代了钴元素，调节了结构并提高了离子导电性。值得一提的是，V存在于最流行的多阴离子材料中，虽然它有毒且成本高昂，但未来的研究努力预计能够有效减少V的消耗，并探索替代阳离子掺杂剂进行替代。</p>
+<h4 id="负离子掺杂"><a href="#负离子掺杂" class="headerlink" title="负离子掺杂"></a>负离子掺杂</h4><p>阴离子掺杂是通过对多负离子正极施加强烈的感应效应来提高其电化学性能的另一种方法。这种方法导致了具有高工作平台电压的多负离子材料的发展。最近，一系列典型的阴离子掺杂多负离子材料已被研究用于锂离子电池。</p>
+<p>王等合成了氯掺杂的NaV(PO)2F(NVPOClF)阴极，其中氯掺杂通过调节NVPOF晶格和V中心中的电子分布和密度，显著提高了材料的倍率性能和循环稳定性。总体而言，氯掺杂扩大了Na扩散空间，并降低了迁移能隙（图9a、b）。最终，NVPOClF在30倍率下实现了约63毫安时/克的优越倍率容量，并与NVPOF阴极相比表现出更好的循环性能（图9c、d）。作为一种高电负性元素，氟常被用作阴离子掺杂剂。邓等制备了一种碳包覆的氟掺杂NaTi(PO)4F(F-NTP@C)复合材料。合成路线及其基本结构见图9e。经过氟掺杂后，构建了CF和TiF键，改变了修饰的NTP结构（图9f）。如图9g所示，氟掺杂降低了能带隙，有助于Na传递动力学。因此，F-NTP@C材料在初库仑效率为94.8%的情况下实现了131.3毫安时/克的容量，并在0.5至50倍率范围内展现出优异的倍率性能，从123.5至108.7毫安时/克不等。胡等设计了溴掺杂的NaV(PO)3F/C复合材料，其中部分氟被溴取代。溴掺杂不仅减轻了氟的消耗，还减少了电荷局域化并增强了电子导电性。</p>
+<p>此外，硅元素还可以作为掺杂剂应用于聚阴离子材料中，通过替代聚阴离子团中的磷元素。例如，Aragón等人合成了钠钒磷酸盐（NaVPO4）（SiO2）（0 ≤ x ≤ 0.5）作为钠离子电池的正极材料，在其中硅掺杂扩大了钠离子的扩散通道，从而使其相对于无硅样品表现出更好的倍率性能和循环稳定性。总的来说，值得注意的是，适当量的阴离子掺杂有助于优化电化学性能。</p>
+<p>过量的掺杂会导致骨架结构的变化和容量的降解。因此，对掺杂水平的精确控制是实现所需电化学性能的必要条件。</p>
+<p><img src="https://img.talk-qys.top/img/sstr202300150-fig-0009-m.webp" srcset="/img/loading.gif" lazyload alt="sstr202300150-fig-0009-m"></p>
+<h3 id="表面包覆"><a href="#表面包覆" class="headerlink" title="表面包覆"></a>表面包覆</h3><p>除了元素掺杂，表面涂层也是提高电子导电性和结构稳定性的改进方法之一。特别是在可变涂层材料中，碳是最有利的材料，这不仅因为碳可以作为涂层层，还因为它可以与多阴离子材料混合形成坚固的基质，比如碳纳米管，碳纤维，碳纳米片等。总体而言，碳修饰策略已被证明能够增强结构稳定性，阻止颗粒生长，并促进电子导电性。</p>
+<p>在高等等的研究工作中，制备了一种具有介孔海绵状结构、被包覆在碳层和交联石墨烯纳米片（NFPP@C@rGO）中的钠铁磷酸铁（PO）（P O ）正极材料。双碳基质由碳包覆层和rGO纳米片形成的导电框架组成（图10a、b），不仅可以加速离子传输动力学，还可以抑制钠充放电过程中的体积变化。如图10c所示，在75%的钠提取后只有4.1%的体积变化。最终，在20 C下经历了一次独特的循环性能，容量保持率在10,000次循环后达到91.7%，远高于NFPP@C的26.8%（图10d）。马等人还设计了一种双碳层包覆策略，应用于磷酸钠钒（NMVP/C@C），该材料是通过溶胶-凝胶法合成的（图10e）。图10f-i显示了NMVP/C和NMVP/C@C的TEM和HRTEM图像，突显出这两种正极材料的独特微观形态。在NMVP/C@C的表面，不仅有类似于NMVP/C的无定形单个碳层，还有一个碳膜碳层。作为导电网络，双碳层不仅在提高电子导电性方面起关键作用，还可以保护正极材料免受腐蚀，避免电子极化。</p>
+<p>因此，NMVP/C@C相对于NMVP/C限制了极化和电压平台衰减。如图10j、k所示，电压平台和氧化还原峰值得到了很好的保持，而NMVP/C显示出较差的结构稳定性和容量。NMVP/C@C在1000个循环中展现出优异的电化学性能，其容量为80.7毫安时/克，5倍倍率下的容量保持率为85.4%，远高于NMVP/C的45.9%（图10l）。类似地，由碳层和碳纳米片组成的双碳基质可以赋予长周期稳定性。此外，Pandit等人提出了一种固相法合成的碳包覆NaV(PO4)3(NVP-C)阴极，具有核壳结构，显示出0.1倍倍率下104毫安时/克的容量以及经过3500个循环后首个循环容量保持率达99.9%的非凡性能。此外，装配的Pb//NVP-C全电池在0.1倍倍率下展现出233毫安时/克的良好可逆容量。这一设计为铅酸电池的循环利用提供了新的见解。</p>
+<p>一种由碳和金属氧化物复合而成的材料也可以作为涂层材料，协同增强电子导电性。王等人合成了一种Ce掺杂的NMVP@CeO/C阴极材料，其表面涂覆有CeO 2 /C复合材料。由于较大的Ce离子，钠的扩散通道被扩大，钠的插入/提取体积变化的趋势减弱。此外，CeO 2 /C涂层充当保护层，防止阴极腐蚀，并有助于优异的循环性能和NMVP@CeO + /C的电子导电性。</p>
+<h3 id="结构体系"><a href="#结构体系" class="headerlink" title="结构体系"></a>结构体系</h3><p>结构体系是改善聚阴离子材料电化学性能的另一种有效方法。尽管聚阴离子材料具有3D开放框架和较高的工作电压，但往往容易出现容量衰减和循环性能差的问题，这阻碍了它们的商业化。改变微观结构是实现改善聚阴离子正极材料机械和电化学性能的研究热点。此外，将微观结构修饰与形态优化相结合，常常用于协同增强效果。一个方法是将聚阴离子粒子与碳材料混合，构建一个复杂的骨架。以下是一些目前关注聚阴离子阴极材料在结构和形态方面优化的研究。</p>
+<h4 id="混合结构"><a href="#混合结构" class="headerlink" title="混合结构"></a>混合结构</h4><p>如前所述，尽管多阴离子材料具有大的三维开放框架，但它们往往存在有限的电子导电性和低能量密度。仅具有空心和多孔结构的简单结构体系是无法实现所需电化学性能的。因此，涉及多重复杂结构体系的综合策略，以及碳杂化、包覆或元素掺杂，已在全球范围内引起了极大的关注。</p>
+<p>最近，李等人提出了一种钠钒磷氟氧化物（Na 3 V 2 (PO 4 ) 2 F 2.5 O 0.5 ）复合材料（N-NVPFO）的巧妙的“内外”结合策略，应用于准固态电池。N-NVPFO采用溶剂热法制备，其花状结构由三维纳米片和N掺杂组成，显示出优越的倍率性能。如图11a、b所示，扫描电子显微镜图像表明交联纳米片形成大孔结构，可缩短Na + 扩散距离，并为化学反应提供更多活性位点。此外，N-NVPFO表面包裹有碳层，协同改善电子导电性。N-NVPFO复合材料中的N掺杂降低了能带间隙（图11c、d）并稳定了钒的价态，同时也导致了氧空位的生成。因此，N-NVPFO复合材料在10 C下达到了84 mAh/g的高倍率性能，并在5 C下经过2000次循环后保持86%的容量保持率（表3）。除了复杂的花状结构，刘等人还通过溶胶-凝胶法在NASICON型Na 3 MnTi(PO 4 ) 2.83 F 0.5 （NMTPF）复合材料上设计了分级多孔结构（图11g）。通过引入F − 来部分取代PO 4 3− ，可以通过其高电负性诱导效应来控制颗粒大小，从而形成多孔结构（图11e、f）。与纳米片类似，纳米颗粒也能有效缩短Na + 扩散距离，多孔结构通过扩大接触面积促进电解质渗透到阴极材料中。扰乱规则的长程晶体结构是增强电子导电性的另一种方法。耿等人合成了均匀的两相Na 3 V 2 (PO 4 ) 3 阴极（HNVP），它是Na 7 V 4 (P 2 O 7 ) 4 PO 4 （Na 7 VP）和Na 3 V 2 (PO 4 ) 3 （Na 3 VP）的混合物。在HNVP中，无定形相的一部分由纳米尺度的短程Na 3 VP和Na 7 VP组成，晶界生成为Na + 离子扩散提供了快速通道，因为在Na + 插入/脱嵌过程中减轻了内应力。这显著促进了Na + 离子传输动力学，因为更多的Na + 离子将从Na 3 VP组分中提取到两相结构的Na 7 VP中（图11h）。因此，HNVP//NTP全电池在10℃下提供了令人满意的61.84 mAh/g的倍率性能，以及在800个循环中保持94.48%的容量保持率（图11i、j）。这一策略还为未来其他复合材料的潜在应用提供了新的见解。</p>
+<p><img src="https://img.talk-qys.top/img/sstr202300150-fig-0011-m.webp" srcset="/img/loading.gif" lazyload alt="sstr202300150-fig-0011-m"></p>
+<h4 id="结构与碳质基体的耦合"><a href="#结构与碳质基体的耦合" class="headerlink" title="结构与碳质基体的耦合"></a>结构与碳质基体的耦合</h4><p>经过确认，与碳质基体耦合的结构能够强化骨架并优化循环性能。最近，苏等人设计了一种Hierarchically Porous Carbon Skeleton的NVP@C复合物包覆的NaV(PO ) (NVP)纳米颗粒。NVP纳米颗粒被锚定在孔结构上，缩短了Na扩散距离，促进了电解质的渗透，并在Na插入/扩散过程中减轻了内部应力。因此，NVP@C展现出优越的倍率性能和循环稳定性。此外，与碳纳米管（CNTs）混合也是增强聚阴离子材料倍率性能的有效方法。高等人合成了一种NaFePO F/碳/多壁碳纳米管微球（NFPF@C@MCNTs）复合材料，其中微球结构有效减缓体积变化并增强离子扩散动力学。该复合材料在0.1 C下表现出可逆的118.4 mAh g比容量和700个循环后的97%容量保持率（表3）。纳米纤维通常由电纺技术构建，作为电极材料具有有益的优点，有助于离子传输、电解质/阴极相互作用等。胡等人合成了一种作为阴极直接使用的NaMnV(PO ) @C (F-NMVP@C)纤维膜，无需额外的加工步骤。由于纤维膜的制备，Na转移得到了极大地促进，形态稳定性得到了广泛增强。因此，F-NMVP@C在10 C下表现出优异的60.0 mAh g倍率容量，并在60个循环后以0.2 C的速率保持了99%的容量</p>
+<h3 id="合成方法"><a href="#合成方法" class="headerlink" title="合成方法"></a>合成方法</h3><p>设计新型合成方法的发展，不仅有助于解决环境不友好问题，还在制备纳米结构多阴离子材料方面发挥作用，这些材料具有粒径、孔隙度等方面精确设计的参数。 近年来，已提出了一些改进的合成方法来克服这些挑战。</p>
+<p>通过共沉淀反应，在氧化还原过程中在原位气泡上生成多壳NVOPF微球，作为中空结构形成的软模板。不需要额外的烧结、纳米化和碳涂层等操作，因此为制备多壳中空多阴离子微球提供了新颖的低成本方法。</p>
+<p><img src="https://img.talk-qys.top/img/sstr202300150-fig-0012-m.webp" srcset="/img/loading.gif" lazyload alt="sstr202300150-fig-0012-m"></p>
+<p>通过共沉淀反应，在氧化还原过程中在原位气泡上生成多壳NVOPF微球，作为中空结构形成的软模板。不需要额外的烧结、纳米化和碳涂层等操作，因此为制备多壳中空多阴离子微球提供了新颖的低成本方法。</p>
+<p>在优化合成策略以提升电化学性能方面，孙教授的团队 <a target="_blank" rel="noopener" href="https://onlinelibrary.wiley.com/doi/full/10.1002/sstr.202300150#sstr202300150-bib-0168">168</a> 设计了一种一步微波辅助水热法来合成NVPF 1+2<em>x</em> ，提供了一种低成本且均匀的加热处理方式（图12f）。本研究探讨了适当的焙烧温度（500、600和700°C），并将氧化石墨烯（rGO）结构与NVPF 1+2<em>x</em> 相结合，以协同优化电子导电性。</p>
+<p>此外，利用不同的煅烧温度来使用rGO结构，可以改变相组成以控制电化学性能，为加速离子传输动力学的合成策略提供新的见解。</p>
+<p>简言之，新颖的合成策略在进一步发展多阴离子材料方面起着关键作用，特别是在降低成本、优化电化学性能以及促进其工业商业化方面。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%94%B5%E6%B1%A0/" class="category-chain-item">电池</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E9%92%A0%E7%94%B5%E6%B1%A0/">#钠电池</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>钠离子电池综述</div>
+      <div>https://www.talk-qys.top/2023/08/20/钠离子电池综述/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>dgqyushen</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年8月20日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/04/02/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84ChatGPT/" title="搭建自己的ChatGPT">
+                        <span class="hidden-mobile">搭建自己的ChatGPT</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+      
+
+<div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
